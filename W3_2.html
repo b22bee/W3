@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var myTimer = setInterval(myFunction, 1000);
+
+		var a = 0;
+		function myFunction(){
+			var time = new Date();
+			var t = time.getTime();
+			t = t - 1632881760000;
+			document.body.innerHTML = t;
+			a = a + 1;
+			if(a == 5){
+				clearInterval(myTimer);
+				document.body.innerHTML = "finish!!";
+			}
+		}
+
+
+	</script>
+
+
+</body>
+</html>
